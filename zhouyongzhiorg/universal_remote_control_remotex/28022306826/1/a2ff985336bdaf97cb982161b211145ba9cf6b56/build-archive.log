@@ -1,0 +1,110 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild archive -workspace ./RemoteX.xcworkspace -scheme RemoteX -configuration Release -destination generic/platform=iOS -archivePath /Users/runner/work/universal_remote_control_remotex/universal_remote_control_remotex/build.xcarchive
+
+2026-06-23 11:18:59.091 xcodebuild[28332:70677] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (21 targets)
+    Target 'RemoteX' in project 'RemoteX'
+        ➜ Implicit dependency on target 'Pods-RemoteX' in project 'Pods' via file 'Pods_RemoteX.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'AppinPurchasesKit' in project 'Pods' via options '-framework AppinPurchasesKit' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'Google-Mobile-Ads-SDK' in project 'Pods' via options '-framework Google_Mobile_Ads_SDK' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'BUTTSDKFramework' in project 'Pods' via options '-framework TTSDKFramework' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-RemoteX' in project 'Pods'
+        ➜ Explicit dependency on target 'Ads-CN' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkMediationAdmobAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkMediationAdxSmartdigimktCNAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkMediationBaiduAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkMediationGDTAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkMediationGromoreAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkMediationTTAdapter_Mix' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkiOS' in project 'Pods'
+        ➜ Explicit dependency on target 'AppinPurchasesKit' in project 'Pods'
+        ➜ Explicit dependency on target 'BUTTSDKFramework' in project 'Pods'
+        ➜ Explicit dependency on target 'BaiduMobAdSDK' in project 'Pods'
+        ➜ Explicit dependency on target 'GDTMobSDK' in project 'Pods'
+        ➜ Explicit dependency on target 'Google-Mobile-Ads-SDK' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUserMessagingPlatform' in project 'Pods'
+        ➜ Explicit dependency on target 'SmartdigimktCNSDK' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'AppinPurchasesKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+    Target 'AnyThinkMediationTTAdapter_Mix' in project 'Pods'
+        ➜ Explicit dependency on target 'Ads-CN' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkiOS' in project 'Pods'
+    Target 'AnyThinkMediationGromoreAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'Ads-CN' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkiOS' in project 'Pods'
+    Target 'AnyThinkMediationGDTAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkiOS' in project 'Pods'
+        ➜ Explicit dependency on target 'GDTMobSDK' in project 'Pods'
+    Target 'GDTMobSDK' in project 'Pods' (no dependencies)
+    Target 'AnyThinkMediationBaiduAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkiOS' in project 'Pods'
+        ➜ Explicit dependency on target 'BaiduMobAdSDK' in project 'Pods'
+    Target 'BaiduMobAdSDK' in project 'Pods' (no dependencies)
+    Target 'AnyThinkMediationAdxSmartdigimktCNAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkiOS' in project 'Pods'
+        ➜ Explicit dependency on target 'SmartdigimktCNSDK' in project 'Pods'
+    Target 'SmartdigimktCNSDK' in project 'Pods' (no dependencies)
+    Target 'AnyThinkMediationAdmobAdapter' in project 'Pods'
+        ➜ Explicit dependency on target 'AnyThinkiOS' in project 'Pods'
+        ➜ Explicit dependency on target 'Google-Mobile-Ads-SDK' in project 'Pods'
+    Target 'Google-Mobile-Ads-SDK' in project 'Pods'
+        ➜ Explicit dependency on target 'Google-Mobile-Ads-SDK-GoogleMobileAdsResources' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUserMessagingPlatform' in project 'Pods'
+    Target 'GoogleUserMessagingPlatform' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUserMessagingPlatform-UserMessagingPlatformResources' in project 'Pods'
+    Target 'GoogleUserMessagingPlatform-UserMessagingPlatformResources' in project 'Pods' (no dependencies)
+    Target 'Google-Mobile-Ads-SDK-GoogleMobileAdsResources' in project 'Pods' (no dependencies)
+    Target 'AnyThinkiOS' in project 'Pods' (no dependencies)
+    Target 'Ads-CN' in project 'Pods'
+        ➜ Explicit dependency on target 'BUTTSDKFramework' in project 'Pods'
+    Target 'BUTTSDKFramework' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/universal_remote_control_remotex/universal_remote_control_remotex/RemoteX/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 77da8a21c55cd09a905d0c9c42d9b013
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/RemoteX-ffttuwvjyujllshfytiqqdwkenrx/Build/Intermediates.noindex/ArchiveIntermediates/RemoteX/IntermediateBuildFilesPath/XCBuildData/77da8a21c55cd09a905d0c9c42d9b013.xcbuilddata
+/Users/runner/work/universal_remote_control_remotex/universal_remote_control_remotex/RemoteX.xcodeproj: error: Provisioning profile "appstore-6761522410-20260623111744561" doesn't include the App Groups capability. (in target 'RemoteX' from project 'RemoteX')
+/Users/runner/work/universal_remote_control_remotex/universal_remote_control_remotex/RemoteX.xcodeproj: error: Provisioning profile "appstore-6761522410-20260623111744561" doesn't support the group.com.zhouyongzhi.zyz App Group. (in target 'RemoteX' from project 'RemoteX')
+/Users/runner/work/universal_remote_control_remotex/universal_remote_control_remotex/RemoteX.xcodeproj: error: Provisioning profile "appstore-6761522410-20260623111744561" doesn't include the com.apple.security.application-groups entitlement. (in target 'RemoteX' from project 'RemoteX')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace RemoteX with scheme RemoteX
+(1 failure)
